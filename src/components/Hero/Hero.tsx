@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative h-screen md:min-h-full lg:min-h-full 3xl:min-h-64 max-h-[260vw] md:max-h-[83vw] flex items-center md:items-start lg:items-center md:pt-10 overflow-hidden bg-[url('hero-mobile.webp')] md:bg-[url('hero.webp')] bg-position-[50%_50%] md:bg-position-[80%_30%] md:bg-size-[150%] md:bg-no-repeat lg:bg-cover bg-cover"
+      className="relative h-screen md:min-h-full lg:min-h-full 3xl:min-h-64 max-h-[260vw] md:max-h-[83vw] flex items-center md:items-start lg:items-center md:pt-10 overflow-hidden bg-[url('/hero-mobile.webp')] md:bg-[url('/hero.webp')] bg-position-[50%_50%] md:bg-position-[80%_30%] md:bg-size-[150%] md:bg-no-repeat lg:bg-cover bg-cover"
     >
       {/* Background elements */}
       <div className="absolute inset-0 z-0">

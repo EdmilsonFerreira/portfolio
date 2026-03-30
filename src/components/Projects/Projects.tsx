@@ -20,7 +20,7 @@ const projects = [
     description:
       "Desde 2002, a Aviation Service tem sido a escolha preferida das companhias aéreas que buscam manter padrões de excelência em seus serviços.",
     tags: ["NextJS", "TypeScript", "Tailwind", "i18", "Heroku"],
-    image: "/project_1.webp",
+    image: "project_1.webp",
     previewUrl: "https://aviationservice.com.br",
   },
   {
