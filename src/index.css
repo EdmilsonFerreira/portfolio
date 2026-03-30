@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:wght@300;400;600&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --primary: 217.2 91.2% 59.8%;
+  --secondary: 240 3.7% 15.9%;
+  --accent: 217.2 91.2% 59.8%;
+  --swiper-theme-color: #5DBED1!important;
+  --swiper-pagination-bottom: 0%;
+}
+
+@theme {
+  --color-primary: #3d8197;
+  --color-secondary: #2F8BD6;
+  --color-tertiary: #06FAF8;
+  --color-accent: #3b82f6;
+  --color-background: #09090b;
+  --color-card: #2C3135;
+  --color-card-browse-btn: #A1FDB4;
+  --color-card-foreground: #fafafa;
+  --color-border: #27272a;
+  --color-input: #27272a;
+  --color-ring: #3b82f6;
+  --max-width-8xl: 90rem;
+  --max-width-9xl: 100rem;
+  --max-width-10xl: 120rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    /* @apply bg-background text-foreground; */
+    /* font-feature-settings: "rlig" 1, "calt" 1; */
+    @apply bg-zinc-950 text-zinc-100 antialiased;
+    font-family: theme('fontFamily.sans');
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+.swiper .swiper-wrapper {
+  width: 80%;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullets {
+  .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
+    background-color: #ffffff;
+  }
+  
+  .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):active {
+    background-color: #b9b9b9;
+  }
+
+  .swiper-pagination-bullet {
+  background-color: #9e9e9e;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: color-mix(in oklab, var(--color-tertiary) 85%, transparent);
+    scale: 1.15;
+  }
+}
